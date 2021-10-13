@@ -1769,6 +1769,9 @@
 		#endif
 	#endif
 
+	#if defined(EA_PLATFORM_ANANAS)
+		#define EA_COMPILER_NO_FLOATS 1
+	#endif
 
 #endif // INCLUDED_eacompiler_H
 

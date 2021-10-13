@@ -615,6 +615,11 @@
 // __sun is defined by the GCC compiler.
 // __i386 is defined by the Sun and GCC compilers.
 // __sparc is defined by the Sun and GCC compilers.
+// Ananas
+#elif defined(__Ananas__)
+	#undef  EA_PLATFORM_ANANAS
+	#define EA_PLATFORM_ANANAS 1
+	#define EA_PLATFORM_NAME "Ananas"
 #else
 	#error Unknown platform
 	#error Unknown processor
